@@ -6,12 +6,6 @@
 
 ![Kahani agent architecture: Coherent sends a script to parallel flow and fact checkers, then a report writer](assets/architecture.svg)
 
-## Introduction
-
-Stories can be inventive without being inconsistent. Kahani is an agent for scriptwriters who want to write coherent stories: it looks for contradictions in a story's own rules (such as a character's changing traits or an impossible timeline) and checks real-world claims against web sources. It then organizes potential issues into a report that the writer can review, rather than rewriting the script on the writer's behalf.
-
-The current implementation accepts **plain text** in the ADK chat. You can paste a scene or a shorter script and ask for a review; file upload and durable story-bible tracking are not implemented in this repository.
-
 ## Agent architecture
 
 Coherent is the ADK `root_agent` in `coherent/agent.py`. It handles the conversation, decides whether to generate a new review or answer a follow-up question, and has access to a report-generation tool and a fact-search tool. Its report path is:
@@ -37,7 +31,6 @@ Illustrative example only. The graphic above is not a captured agent response.
 | [Google Cloud / `gcloud`](https://cloud.google.com/sdk/docs/install) | Cloud project configuration and local Application Default Credentials for model access |
 | Gemini | Models configured in `coherent/agent.py` for orchestration, checks, and report writing |
 | [Parallel web-search SDK](https://docs.parallel.ai/) | External evidence for factual checks |
-| Pydantic and `python-dotenv` | Finding schemas and local environment configuration |
 | HTML, CSS, JavaScript | Separate prototype frontend in `frontend/index.html` |
 
 The exact Python packages and pinned versions are in `requirements.txt`. Model access and Google Cloud billing or quotas may apply.
