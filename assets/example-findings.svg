@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="350" viewBox="0 0 1120 350" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrative fact and continuity findings</title>
+  <desc id="desc">Two sample cards show an internal continuity mismatch and a factual claim to verify, illustrating the kinds of findings Kahani can produce. These are fictional examples, not actual agent output.</desc>
+  <defs>
+    <style>
+      text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+      .chip{font-size:11px;font-weight:700;letter-spacing:1.4px}
+      .head{font-size:25px;font-weight:750;fill:#f6f5f2}
+      .title{font-size:19px;font-weight:700;fill:#f6f5f2}
+      .body{font-size:14px;fill:#b3c1cf}
+      .quote{font-size:14px;fill:#e2e8ec}
+    </style>
+  </defs>
+  <rect width="1120" height="350" rx="24" fill="#0b1320"/>
+  <rect x="24" y="24" width="1072" height="302" rx="18" fill="#101d2c" stroke="#26384b"/>
+  <text x="54" y="66" class="chip" fill="#85d8bc">ILLUSTRATIVE FINDINGS  /  NOT A LIVE SCREENSHOT</text>
+  <text x="54" y="103" class="head">What a writer might review</text>
+  <rect x="54" y="133" width="488" height="163" rx="14" fill="#192c3c" stroke="#4e6878"/>
+  <rect x="578" y="133" width="488" height="163" rx="14" fill="#192c3c" stroke="#4e6878"/>
+  <text x="76" y="164" class="chip" fill="#85d8bc">FLOW  /  SCRIPT CONTINUITY</text>
+  <text x="76" y="199" class="title">The missing key reappears</text>
+  <text x="76" y="228" class="quote">“Leena locks her only key inside.”</text>
+  <text x="76" y="253" class="body">Later she uses that key with no explanation.</text>
+  <text x="76" y="278" class="body">Check whether a scene or transition is missing.</text>
+  <text x="600" y="164" class="chip" fill="#b3bfff">FACT  /  EXTERNAL VERIFICATION</text>
+  <text x="600" y="199" class="title">A real-world date needs checking</text>
+  <text x="600" y="228" class="quote">“The bridge opened in 1920.”</text>
+  <text x="600" y="253" class="body">Compare a script claim with reliable web sources.</text>
+  <text x="600" y="278" class="body">The live report should provide source URLs.</text>
+</svg>

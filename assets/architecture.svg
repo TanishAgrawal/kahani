@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="590" viewBox="0 0 1120 590" role="img" aria-labelledby="title desc">
+  <title id="title">Kahani agent architecture</title>
+  <desc id="desc">A script enters Coherent. A report request invokes a function tool, which runs the Flow Checker and Fact Checker in parallel. The Fact Checker uses Parallel search. Findings enter the Report Writer, producing a report.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#9bacbe"/></marker>
+    <style>
+      text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+      .heading{font-size:26px;font-weight:750;fill:#f6f5f2}
+      .sub{font-size:13px;fill:#a9b8c7}
+      .label{font-size:17px;font-weight:700;fill:#f6f5f2}
+      .small{font-size:12px;fill:#a9b8c7}
+      .chip{font-size:11px;font-weight:700;letter-spacing:1.3px;fill:#85d8bc}
+      .line{fill:none;stroke:#9bacbe;stroke-width:2;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1120" height="590" rx="24" fill="#0b1320"/>
+  <rect x="24" y="24" width="1072" height="542" rx="18" fill="#101d2c" stroke="#26384b"/>
+  <text class="chip" x="54" y="68">KAHANI  /  SYSTEM MAP</text>
+  <text class="heading" x="54" y="104">One story. Two independent checks. One clear report.</text>
+  <text class="sub" x="54" y="128">Active pipeline in coherent/agent.py  ·  ADK session state connects the stages</text>
+  <path class="line" d="M206 267 H253"/>
+  <path class="line" d="M455 267 H488 V206 H521"/>
+  <path class="line" d="M488 267 V340 H521"/>
+  <path class="line" d="M715 206 H782 V268 H815"/>
+  <path class="line" d="M715 340 H782 V268"/>
+  <path class="line" d="M912 337 V383"/>
+  <path class="line" d="M617 447 V402"/>
+  <rect x="54" y="208" width="152" height="118" rx="14" fill="#192c3c" stroke="#4e6878"/>
+  <text class="chip" x="72" y="235">INPUT</text>
+  <text class="label" x="72" y="263">Script text</text>
+  <text class="small" x="72" y="287">Scene, act, or</text><text class="small" x="72" y="305">short script</text>
+  <rect x="253" y="195" width="202" height="145" rx="14" fill="#17382f" stroke="#3b9879"/>
+  <text class="chip" x="273" y="224">ROOT AGENT</text>
+  <text class="label" x="273" y="255">Coherent</text>
+  <text class="small" x="273" y="280">Routes review requests</text>
+  <text class="small" x="273" y="299">via generate_report tool</text>
+  <text class="small" x="273" y="318">Answers follow-ups</text>
+  <rect x="521" y="159" width="194" height="94" rx="14" fill="#192c3c" stroke="#4e6878"/>
+  <text class="chip" x="539" y="186">PARALLEL  ·  A</text>
+  <text class="label" x="539" y="212">Flow Checker</text>
+  <text class="small" x="539" y="234">Internal continuity</text>
+  <rect x="521" y="293" width="194" height="94" rx="14" fill="#192c3c" stroke="#4e6878"/>
+  <text class="chip" x="539" y="320">PARALLEL  ·  B</text>
+  <text class="label" x="539" y="346">Fact Checker</text>
+  <text class="small" x="539" y="368">External claims</text>
+  <rect x="521" y="447" width="194" height="76" rx="14" fill="#263149" stroke="#7989bd"/>
+  <text class="chip" x="539" y="473">EVIDENCE TOOL</text>
+  <text class="label" x="539" y="499">Parallel search</text>
+  <rect x="815" y="208" width="229" height="119" rx="14" fill="#192c3c" stroke="#4e6878"/>
+  <text class="chip" x="835" y="237">AFTER BOTH CHECKERS</text>
+  <text class="label" x="835" y="266">Report Writer</text>
+  <text class="small" x="835" y="289">Formats findings and</text>
+  <text class="small" x="835" y="307">source references</text>
+  <rect x="815" y="383" width="229" height="88" rx="14" fill="#17382f" stroke="#3b9879"/>
+  <text class="chip" x="835" y="410">OUTPUT</text>
+  <text class="label" x="835" y="438">Review report</text>
+  <text class="small" x="835" y="457">For the writer to assess</text>
+  <text class="small" x="54" y="535">Flow findings + fact findings are passed through ADK session state before report composition.</text>
+</svg>

@@ -331,18 +331,18 @@ root_agent = Agent(
     SUGGESTED WORKFLOWS
 
     To generate the report - you would reviewing scences, acts and stories in
-    the form of text. Use the "report_tool_pipeline" when generating a fresh
+    the form of text. Use the "generate_report" tool when generating a fresh
     report.
 
     To answer questions relating to the story - Answer using your own knowledge
     and context. Additionally for factual matters, if the user is asking
-    facts and events use the "tools.search_fact" tool.
+    facts and events use the "search_fact" tool.
 
     TOOLS
-    "report_tool_pipeline" - 
+    "generate_report" -
         Outputs the complete report of the logical and factual errors.
     
-    "tools.search_fact" - 
+    "search_fact" -
     
         It takes as input a list of queries and return a list of dictionaries 
         in the following format: 
@@ -476,4 +476,3 @@ root_agent = Agent(
 # print(f"Runner created for agent '{runner.agent.name}'.")
 
 # from google.genai import types # For creating message Content/Parts
-
