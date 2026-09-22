@@ -5,8 +5,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-client = Parallel(api_key=os.getenv("PARALLEL_API_KEY"))
-
 def search_fact(queries: list[str]) -> list[dict]:
     """Searches the web and list sources along with a summary
 
@@ -17,11 +15,11 @@ def search_fact(queries: list[str]) -> list[dict]:
         list: A list of dictionary containing excerpt and url 
 
     """
-
+    client = Parallel(api_key=os.getenv("PARALLEL_API_KEY"))
     search = client.search(
     objective="Find out if the following search queries are true or not (dates, chronology, facts).",
     search_queries=queries,
-    advanced_settings={"max_results":4}
+    advanced_settings={"max_results":10}
     )
 
     final = []
